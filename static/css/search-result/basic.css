@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background-color: #f5f3f2;
+    font-family: 'Segoe UI', "Times New Roman", Geneva, Verdana, sans-serif;
+
+    height: 100%;
+}
+
+header {
+    background-color: #2e59a7;
+    margin: 0;
+    padding: 1%;
+
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}

@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+
+    user-select: none;
+    font-family: 'Segoe UI', "Times New Roman", Geneva, Verdana, sans-serif;
+
+    background: #f5f3f2;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    bottom: 0%;
+
+    width: 100%;
+    
+    margin: 8px;
+    text-align: center;
+
+    font-weight: lighter;
+    font-size: x-small;
+
+    color: #5976ba;
+}

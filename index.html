@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh_cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/css/index/basic.css">
+    <link rel="stylesheet" href="static/css/index/simple-content.css">
+    <link rel="stylesheet" href="static/css/index/search-bar.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.6.0.min.js"></script>
+    <script src="static/js/search.js"></script>
+
+    <title>蓝雀字查</title>
+</head>
+
+<body>
+    <!-- 内容框 - 开始 -->
+    <div id="content">
+        <h1 id="title">蓝雀字查</h1>
+
+        <!-- 搜索框 - 开始 -->
+        <form action="/search-result.html" name="search-in-index" method="GET">
+            <!-- NOTICE：若要使用 ajax 必须在这里声明 onsubmit="return false"，否则会重复提交表单导致无法进入 success -->
+            <input name="searchbar" id="search-bar" type="input" autocomplete="off" placeholder="搜索汉字">
+        </form>
+        <!-- 搜索框 - 结束 -->
+
+        <h6 id="invalid-data-prompt">一次只能查询一个汉字（不能有非汉字字符，包括空格、制表符等）</h6>
+    </div>
+    <!-- 内容框 - 结束 -->
+
+    <footer>
+        <p>蓝雀字查旨在提供一个快捷方便的在线汉字查阅工具</p>
+        <p>本网站仅对从 API 获取的数据提供页面进行展示，并不参与数据的编辑、发布等工作。</p>
+    </footer>
+</body>
+
+</html>

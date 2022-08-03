@@ -1,0 +1,20 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    margin-top: 20%;
+
+    text-align: center;
+}
+
+#title {
+    color: #06436f;
+    margin: auto;
+}
+
+#invalid-data-prompt {
+    color: #e60012;
+
+    visibility: hidden;
+}
