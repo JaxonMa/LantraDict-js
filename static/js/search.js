@@ -1,6 +1,10 @@
 function checkSubmit() {
     // 检查输入数据的合规性
-    let value = document.forms["search"]["searchbar"].value;
+    try {
+        var value = document.forms["search"]["searchbar"].value;
+    } catch {
+        var value = document.forms["search-in-index"]["searchbar"].value;
+    }
 
     let spacePattern = /\s+/g;
     let NotHanziPattern = /[0-9 a-z]/ig;
