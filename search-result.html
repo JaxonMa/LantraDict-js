@@ -20,6 +20,7 @@
     <!-- 顶部导航栏 - 开始 -->
     <header>
         <form name="search" method="GET" onsubmit="return false" style="margin: 0; padding: 0;">
+            <!-- NOTICE：若要使用 ajax 必须在这里声明 onsubmit="return false"，否则会重复提交表单导致无法进入 success -->
             <input name="searchbar" id="search-bar" type="text" autocomplete="off" placeholder="搜索汉字">
         </form>
 
@@ -73,7 +74,7 @@
     <!-- 字卡部分 - 结束 -->
 
     <!-- 释义部分 - 开始 -->
-    <!-- 本部分将根据代码更新 -->
+    <!-- 本部分将根据 js 代码更新, 此处仅作示例 -->
     <div class="all-explanation">
         <div class="explanation-layer">
             <p class="explanation-pinyin">zì</p>
