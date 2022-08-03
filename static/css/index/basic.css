@@ -1,12 +1,3 @@
-body {
-    margin: 0;
-
-    user-select: none;
-    font-family: 'Segoe UI', "Times New Roman", Geneva, Verdana, sans-serif;
-
-    background: #f5f3f2;
-}
-
 footer {
     display: flex;
     flex-direction: column;
