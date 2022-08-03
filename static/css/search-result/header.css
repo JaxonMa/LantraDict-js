@@ -34,7 +34,6 @@
 }
 
 #search-bar:focus {
-    /* outline: #d4dde1 solid 1px; */
     outline: 0;
     box-shadow: 4px 4px 10px #06436f;
 }

@@ -26,7 +26,7 @@ function checkSubmit() {
 function searchChar(char) {
     // 请求 API 数据
     $.ajax({
-        url: "http://api.jisuapi.com/zidian/word",
+        url: "https://api.jisuapi.com/zidian/word",
         type: "GET",
 
         data: {
@@ -98,6 +98,8 @@ if (window.location.href.search("searchbar")) {
     let char = getQueryVariable("searchbar");
     // console.log(char);
     searchChar(char);
+} else if (window.location.href != "https://zicha.lantra.xyz/") {
+	window.location.href = "https://zicha.lantra.xyz/"
 }
 
 

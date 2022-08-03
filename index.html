@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="static/css/index/public.css">
+    <link rel="stylesheet" href="static/css/public.css">
     <link rel="stylesheet" href="static/css/index/basic.css">
     <link rel="stylesheet" href="static/css/index/simple-content.css">
     <link rel="stylesheet" href="static/css/index/search-bar.css">
@@ -23,7 +23,7 @@
         <h1 id="title">蓝雀字查</h1>
 
         <!-- 搜索框 - 开始 -->
-        <form action="/search-result.html" name="search-in-index" method="GET">
+        <form action="/search-result.html" name="search-in-index" onsubmit="return checkSubmit()" method="GET">
             <input name="searchbar" id="search-bar" type="input" autocomplete="off" placeholder="搜索汉字">
         </form>
         <!-- 搜索框 - 结束 -->
